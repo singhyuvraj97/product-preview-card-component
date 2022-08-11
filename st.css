@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+}
+
+body{
+  background-color: hsl(30, 38%, 92%);
+}
+
+#mainCont{
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  min-width: 320px;
+  max-width: 30%;
+  margin: 100px auto;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.cont{
+  text-align: center;
+  flex-grow: 1;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+img{
+  border-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 100%;
+  height: auto;
+}
+
+#contTwo{
+  padding: 20px;
+  align-self: stretch;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#contTwo p{
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+}
+
+#prodName{
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+#contTwo h1{
+  color: hsl(212, 21%, 14%);
+  font-weight: 700;
+}
+
+#contTwo h1,#price1{
+  font-size: 28px;
+  font-family: 'Fraunces', serif;
+}
+
+#price1{
+  color: hsl(158, 36%, 37%);
+  margin-right: 20px; 
+}
+
+#price2{
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+#cart{
+  text-align: center;
+  padding: 10px 0px;
+}
+
+#cart a{
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  padding: 10px 45px;
+  border-radius: 10px;
+}
+
+#cart a:hover{
+  background-color: hsl(158, 36%, 20%);
+}
+
+@media screen and (min-width: 376px) and (max-width: 1540px){
+  #mainCont{
+    padding: 0px;
+    margin: 50px auto;
+    padding: 0px;
+    flex-direction: column;
+  }
+
+  img{
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  body{
+    padding: 0px;
+  }
+  
+  #mainCont{
+    max-width: 320px;
+    min-width: 200px;
+    padding: 0px;
+    margin: 50px auto;
+    padding: 0px;
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  img{
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+  }
+}
