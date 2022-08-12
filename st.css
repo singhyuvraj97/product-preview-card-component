@@ -32,6 +32,7 @@ body{
 }
 
 img{
+  display: block;
   border-radius: 5px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -95,7 +96,7 @@ img{
   background-color: hsl(158, 36%, 20%);
 }
 
-@media screen and (min-width: 376px) and (max-width: 1540px){
+@media screen and (min-width: 376px) and (max-width: 1560px){
   #mainCont{
     padding: 0px;
     margin: 50px auto;
